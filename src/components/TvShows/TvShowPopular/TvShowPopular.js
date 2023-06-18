@@ -25,22 +25,29 @@ const TvShowPopular = () => {
 
 
   return (
-    <div className='allMoviePage'> 
+<div class="flex flex-wrap justify-center   mx-auto ">
+<div className='grid  lg:grid-cols-3 gap-6 md:grid-cols-2 '>
     {tvPopular && tvPopular.map((t)=>
 
-<div key={t.id} className="card">
-<img src={poster_url+t.poster_path} className="card-img-top"  alt={t.original_name}></img>
-<div className="card-body">
-<h2 className="card-title">{t.original_name}</h2>
-<h6 className="card-text">{t.overview}</h6>
-<p>Rating: {t.vote_average}</p>
-<p>Language: {t.original_language}</p>
+<div  className="group relative block bg-black m-10">
+<img alt={t.title} src={poster_url+t.poster_path}  className="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"/>
+
+<div className="relative p-4 sm:p-6 lg:p-8 mb-20">
+
+<p className="text-xl font-bold text-white sm:text-2xl ">{t.title}</p>
+
+<div className="mt-32 sm:mt-48 lg:mt-64">
+  <div className="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
+    <p className="text-sm text-white"> {t.overview} </p>
+  </div>
 </div>
 </div>
+</div>
+
 
   )}
 
-
+</div>
 </div>
   )
 }
