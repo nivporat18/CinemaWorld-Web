@@ -25,14 +25,14 @@ const TvShowPopular = () => {
 
 
   return (
-<div class="flex flex-wrap justify-center   mx-auto ">
+<div className="flex flex-wrap justify-center   mx-auto ">
 <div className='grid  lg:grid-cols-3 gap-6 md:grid-cols-2 '>
     {tvPopular && tvPopular.map((t)=>
 
-<div  className="group relative block bg-black m-10">
+<div  className="group relative block bg-black m-10 rounded-xl border">
 <img alt={t.title} src={poster_url+t.poster_path}  className="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"/>
 
-<div className="relative p-4 sm:p-6 lg:p-8 mb-20">
+<div className="relative p-10 sm:p-6 lg:p-8 mb-20">
 
 <p className="text-xl font-bold text-white sm:text-2xl ">{t.title}</p>
 
