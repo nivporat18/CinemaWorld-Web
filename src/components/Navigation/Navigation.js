@@ -53,7 +53,7 @@ const inputChange = (e)=>{
 
 
   <div className="flex  items-center justify-end gap-8 ">
-      <nav aria-label="Global" className="hidden lg:flex lg:gap-4 lg:text-xs lg:font-bold lg:uppercase lg:tracking-wide lg:text-white">
+      <nav aria-label="Global" className="hidden lg:flex lg:gap-4 lg:text-xs lg:font-bold lg:uppercase lg:tracking-wide lg:text-white font-mono	">
 
     <Link className="block h-16 border-b-4 border-transparent leading-[4rem] hover:border-current hover:text-red-700"  to="/movie-popular"> Movie Popular</Link>
     <Link className="block h-16 border-b-4 border-transparent leading-[4rem] hover:border-current hover:text-red-700" to="/movie-rated"> Movie Rated</Link>
@@ -79,8 +79,8 @@ const inputChange = (e)=>{
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
               </svg> : 
         
-        <button class="navbar-burger flex items-center text-white p-3">
-				<svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+        <button className="navbar-burger flex items-center text-white p-3">
+				<svg className="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
 					<title>Mobile menu</title>
 					<path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
 				</svg>
@@ -89,7 +89,7 @@ const inputChange = (e)=>{
     </div>
 
       {isOpen && (
-      <ul className="z-20 top-6 right-8 fixed  items-center font-medium border border-gray-100 rounded-lg bg-gray-50 ">
+      <ul className="z-20 top-6 right-8 fixed  items-center font-medium border border-gray-100 rounded-lg bg-gray-50  font-mono	">
 
           <Link className="block h-16 border-b-4 border-transparent leading-[4rem] hover:border-current hover:text-red-700"  to="/movie-popular"> Movie Popular</Link>
           <Link className="block h-16 border-b-4 border-transparent leading-[4rem] hover:border-current hover:text-red-700" to="/movie-rated"> Movie Rated</Link>
@@ -109,7 +109,7 @@ const inputChange = (e)=>{
       </div>
       </div>
 
-      <div class="flex flex-wrap justify-center mx-auto ">
+      <div className="flex flex-wrap justify-center mx-auto ">
 <div className='grid  lg:grid-cols-3 gap-6 md:grid-cols-2 '>
 
 
